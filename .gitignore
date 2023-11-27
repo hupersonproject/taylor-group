@@ -1,0 +1,6 @@
+.DS_Store
+.Trashes
+.Spotlight-*
+Thumbs.db
+
+node_modules
