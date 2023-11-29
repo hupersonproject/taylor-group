@@ -42,7 +42,8 @@ footer {
     max-width: 540px;
 
     @include breakpoint('small') {
-        max-width: 100%;
+        max-width: 1300px;
+        margin: 0 auto;
         padding-right: 75px;
         padding-left: 75px;
     }

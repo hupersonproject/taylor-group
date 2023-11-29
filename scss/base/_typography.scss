@@ -4,6 +4,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .button_link {
+    background: white;
     border: solid 1px $copper;
     color: $black-raisin;
     font-family: Montserrat;
@@ -14,11 +15,25 @@ h1, h2, h3, h4, h5, h6, p {
     letter-spacing: 2.4px;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 13px 25px 15px;
+    transition: background-color .5s ease-in-out;
+    padding: 16px 25px 17px;
 
     @include hocus {
-        border-color: $black-raisin;
-        text-decoration: underline;
+        background: $copper;
+    }
+}
+
+a,
+.copper_text {
+    color: $copper;
+}
+
+a {
+    color: $copper;
+    text-decoration: none;
+
+    @include hocus {
+        color: $black-raisin;
     }
 }
 
