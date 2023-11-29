@@ -1,8 +1,45 @@
 $breakpoints: (
-  'tiny': (min-width: 380px),
-  'small': (min-width: 767px),
+  'vtiny': (min-width: 380px),
+  'tiny': (min-width: 600px),
+  'small': (min-width: 840px),
+  'header': (min-width: 920px),
   'medium': (min-width: 1024px),
   'large': (min-width: 1200px),
-  'xlarge': (min-width: 1800px),
+  'xlarge': (min-width: 1300px),
 );
 
+
+/// Media query merger
+/// Create a single media condition out of a map of queries
+/// @param {Map} $queries - Map of media queries
+@mixin media($queries) {
+  @if length($queries) == 0 {
+    @content;
+  } @else {
+    $first-key: nth(map-keys($queries), 1);
+
+    @media ($first-key: map-get($queries, $first-key)) {
+      $queries: map-remove($queries, $first-key);
+
+      @include media($queries) {
+        @content;
+      }
+    }
+  }
+}
+
+@mixin breakpoint($breakpoint) {
+  // Get the query map for $breakpoints map
+  $queries: map-get($breakpoints, $breakpoint);
+
+  // If there is no query called $breakpoint in map, throw an error
+  @if not $queries {
+    @error "No value could be retrieved from `#{$breakpoint}`. "
+    + "Please make sure it is defined in `$breakpoints` map.";
+  }
+
+  // Include the media mixin with $queries
+  @include media($queries) {
+    @content;
+  }
+}

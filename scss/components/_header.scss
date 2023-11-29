@@ -1,0 +1,105 @@
+header {
+    display: flex;
+    flex-direction: column-reverse;
+
+    @include breakpoint('header') {
+        flex-direction: row;
+        justify-content: space-between;
+
+    
+    }
+    &.wrapper {
+        padding-left: 0;
+        padding-right: 0;
+        @include breakpoint('header') {
+            padding-left: 75px;
+            padding-right: 75px;
+        }
+    }
+}
+
+.logos {
+    margin-top: 2.5rem;
+    text-align: center;
+}
+
+.logo-ttg {
+    margin-right: 2rem;
+    max-width: 31%;
+    @include breakpoint('tiny') {
+        margin-right: 4rem;
+        max-width: 100%;
+    }
+}
+
+.cta {
+    align-items: center;
+    border-bottom: solid 1px $gray-light;
+    border-top: solid 1px transparent;
+    color: $black;
+    display: flex;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    height: 3rem;
+    letter-spacing: .96px;
+    margin-bottom: 1rem;
+    padding: 0 $content-spacing;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    @include hocus {
+        .hpp_link {
+            border-bottom: solid 1px transparent;
+        }
+    }
+
+    @include breakpoint('header') {
+        border-bottom: none;
+        font-size: 15px;
+        letter-spacing: 1.2px;
+        margin-bottom: 0;
+        margin-right: 0 - $content-spacing-lg;
+        margin-top: 2rem;
+        padding: 0 $content-spacing-lg;
+    }
+
+    .explore {
+        @include breakpoint('header') {
+            display: none;
+        }
+        @include breakpoint('medium') {
+            display: block;
+        }
+    }
+
+    .hpp_link {
+        border-bottom: solid 1px $copper;
+        color: $copper;
+        font-weight: 600;
+        margin-left: .4rem;
+        // @include breakpoint('small') {
+        //     padding-left: .5rem;
+        // }
+    }
+
+    &:after {
+        background: url('/img/arrow-right.svg') center center no-repeat;
+        content: '';
+        display: block;
+        height: 14px;
+        // left: calc(50% - 15px);
+        margin: 0 auto;
+        position: absolute;
+        right: $content-spacing;
+        // top: 0;
+        // transform: translate(4px, 1px);
+        width: 16px;
+        @include breakpoint('header') {
+            position: relative;
+            right: auto;
+            padding-left: .5rem;
+        }
+    }
+}

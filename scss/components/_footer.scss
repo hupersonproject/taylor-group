@@ -1,0 +1,125 @@
+
+footer {
+    // align-items: center;
+    background-color: $gray-overcast;
+    box-sizing: border-box;
+    display: flex;
+    flex: auto;
+    min-height: 440px;
+    overflow: hidden;
+    padding-top: 3rem;
+    position: relative;
+    @include breakpoint('tiny') {
+        padding-top: 4rem;
+    }
+    @include breakpoint('small') {
+        padding-top: 5rem;
+    }
+    @include breakpoint('medium') {
+        padding-top: 8rem;
+    }
+}
+
+.footer_bg {
+    color: rgba(255,255,255,.2);
+    pointer-events: none;
+    font-family: 'TheSeasons';
+    font-size: 60rem;
+    font-style: italic;
+    font-weight: 900;
+    position: absolute;
+    right: -40rem;
+    top: -19rem;
+
+    @include breakpoint('header') {
+        right: -2rem;
+    }
+}
+
+.footer_wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 540px;
+
+    @include breakpoint('small') {
+        max-width: 100%;
+        padding-right: 75px;
+        padding-left: 75px;
+    }
+
+    @include breakpoint('header') {
+        flex-direction: row;
+    }
+
+    > div {
+        flex-basis: 50%;
+    }
+}
+
+.footer_content {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    @include breakpoint('header') {
+        padding-right: 4rem;
+    }
+}
+
+.footer_content_text {
+    p {
+        margin-bottom: 3rem;
+    }
+}
+
+.footer_info {
+    font-family: Montserrat;
+    font-size: 14px;
+    margin: 0 0 6rem;
+    max-width: 22rem;
+
+    @include breakpoint('header') {
+        padding-top: .4rem;
+        padding-left: 3rem;
+    }
+
+    .footer_info-details {
+        display: flex;
+    }
+
+    .footer_info-contact {
+        font-size: 14px;
+        flex: 0 0 320px;
+
+        color: $copper;
+
+        a {
+            border-bottom: solid 1px $copper;
+            color: $black-raisin;
+            font-weight: bold;
+            text-decoration: none;
+
+            @include hocus {
+                color: $copper;
+            }
+        }
+    }
+
+    .footer_info-social {
+        align-self: flex-end;
+    }
+}
+
+.copyright {
+    bottom: 1rem;
+    font-size: 12px;
+    margin: 0 0 0 0;
+    position: absolute;
+
+    @include breakpoint('header') {
+        margin: 0 auto 1rem 0;
+        position: relative;
+        bottom: auto;
+    }
+}

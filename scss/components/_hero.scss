@@ -1,0 +1,119 @@
+
+.hero_wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    // min-height: 360px;
+    // margin-top: -.8rem;
+    overflow: hidden;
+
+    @include breakpoint('tiny') {
+        padding-left: 75px;
+        padding-right: 75px;
+        max-width: 540px;
+    }
+
+    @include breakpoint('small') {
+        flex-direction: row;
+        max-width: 100%;
+    }
+
+}
+
+.hero_content {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    padding-right: $content-spacing;
+    flex: 1 1 360px;
+
+    @include breakpoint('small') {
+        align-self: flex-end;
+        flex: 0 0 400px;
+        padding-right: $content-spacing-lg * 2;
+    }
+
+    @include breakpoint('header') {
+        padding-right: $content-spacing-lg;
+        padding-top: 6rem;
+    }
+
+    @include breakpoint('large') {
+        flex: 0 0 520px;
+    }
+
+    h1 {
+        max-width: 22rem;
+        @include breakpoint('tiny') {
+            max-width: 30rem;
+        }
+        
+    }
+
+    p {
+        
+        max-width: 24rem;
+        @include breakpoint('vtiny') {
+            margin-left: 35px;
+        }
+        @include breakpoint('small') {
+            margin-left: 0;
+        }
+    }
+
+    p:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.hero_images {
+    display: flex;
+    flex: 1 1;
+    justify-content: flex-end;
+    position: relative;
+    margin-left: -35px;
+    margin-right: -35px;
+    min-width: 100%;
+
+    @include breakpoint('small') {
+        margin-left: auto;
+        margin-right: auto;
+        min-width: auto;
+    }
+
+}
+
+.small_images {
+    bottom: 1rem;
+    display: inline-flex;
+    flex-direction: column;
+    left: 0;
+    max-width: 32%;
+    position: absolute;
+}
+
+.collage-1 {
+    align-self: flex-start;
+    margin-bottom: 1rem;
+    max-width: 53%;
+    width: 100%;
+
+}
+
+.collage-2 {
+    align-self: flex-start;
+    max-width: 100%;
+    width: 100%;
+}
+
+.collage-3 {
+    align-self: center;
+    max-width: 80.5%;
+    min-width: 200px;
+    width: 100%;
+    @include breakpoint('vtiny') {
+        min-width: 290px;
+    }
+}

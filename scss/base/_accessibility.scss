@@ -1,0 +1,9 @@
+
+// Combine active, hover, and focus for accessibility purposes
+@mixin hocus {
+    &:active,
+    &:hover,
+    &:focus {
+      @content;
+    }
+  }

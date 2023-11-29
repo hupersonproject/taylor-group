@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "The Taylor Group",
   "scripts": {
-    "sass": "sass --watch --update --style=compressed scss:css",
+    "sass": "sass --watch --update --style=expanded scss:css",
     "sass-dev": "sass --watch --update --style=expanded scss:css",
     "sass-prod": "sass --no-source-map --style=compressed scss:css",
     "browser-sync": "browser-sync start --server --startPath \"index.html\" --files \"**/*\" --directory --no-notify --no-open",

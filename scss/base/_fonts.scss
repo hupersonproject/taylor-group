@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'DMsans';
+    font-stretch: 25% 150%;
+    font-weight: 100 900;
+    src: local('DMsans'), url('/fonts/DMSans-VariableFont_opsz,wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'DMsans';
+    font-style: italic;
+    font-stretch: 25% 150%;
+    font-weight: 100 900;
+    src: local('DMsans'), url('/fonts/DMSans-Italic-VariableFont_opsz,wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'TheSeasons';
+    src: local('TheSeasons'), url('/fonts/TheSeasons-Bd.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'TheSeasons';
+    font-style: italic;
+    src: local('TheSeasons'), url('/fonts/TheSeasons-BdIt.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-stretch: 25% 150%;
+    font-weight: 100 900;
+    src: local('Montserrat'), url('/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-stretch: 25% 150%;
+    font-weight: 100 900;
+    src: local('Montserrat'), url('/fonts/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+}
