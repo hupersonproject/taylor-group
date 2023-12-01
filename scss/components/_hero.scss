@@ -24,7 +24,7 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    padding-top: 3rem;
+    padding-top: 2rem;
     padding-bottom: 2rem;
     padding-right: $content-spacing;
     flex: 1 1 360px;
@@ -41,26 +41,32 @@
     }
 
     @include breakpoint('large') {
-        flex: 0 0 520px;
+        flex: 0 0 540px;
     }
 
     h1 {
-        max-width: 22rem;
+        max-width: 23rem;
         @include breakpoint('tiny') {
-            max-width: 30rem;
+            max-width: 31rem;
         }
         
     }
 
     p {
         
-        max-width: 24rem;
+        max-width: 300px;
         @include breakpoint('vtiny') {
             margin-left: 35px;
         }
         @include breakpoint('small') {
             margin-left: 0;
         }
+    }
+
+    .announce {
+        font-size: 22px;
+        line-height: 1.35;
+        margin-bottom: 8px;
     }
 
     p:last-of-type {

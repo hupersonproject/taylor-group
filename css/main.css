@@ -281,7 +281,7 @@ header.wrapper {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  padding-top: 3rem;
+  padding-top: 2rem;
   padding-bottom: 2rem;
   padding-right: 0.7rem;
   flex: 1 1 360px;
@@ -301,19 +301,19 @@ header.wrapper {
 }
 @media (min-width: 1200px) {
   .hero_content {
-    flex: 0 0 520px;
+    flex: 0 0 540px;
   }
 }
 .hero_content h1 {
-  max-width: 22rem;
+  max-width: 23rem;
 }
 @media (min-width: 600px) {
   .hero_content h1 {
-    max-width: 30rem;
+    max-width: 31rem;
   }
 }
 .hero_content p {
-  max-width: 24rem;
+  max-width: 300px;
 }
 @media (min-width: 380px) {
   .hero_content p {
@@ -324,6 +324,11 @@ header.wrapper {
   .hero_content p {
     margin-left: 0;
   }
+}
+.hero_content .announce {
+  font-size: 22px;
+  line-height: 1.35;
+  margin-bottom: 8px;
 }
 .hero_content p:last-of-type {
   margin-bottom: 0;
@@ -474,24 +479,41 @@ footer {
   }
 }
 .footer_info .footer_info-details {
-  display: flex;
+  flex-direction: column;
+  font-weight: 600;
 }
 .footer_info .footer_info-contact {
+  align-items: center;
+  color: #BB743A;
+  display: flex;
   font-size: 14px;
-  flex: 0 0 320px;
+  margin-bottom: 0.6rem;
+}
+.footer_info .footer_info-phone,
+.footer_info .footer_info-email {
   color: #BB743A;
 }
-.footer_info .footer_info-contact a {
+.footer_info .footer_info-phone a,
+.footer_info .footer_info-email a {
   border-bottom: solid 1px #BB743A;
   color: #231F20;
   font-weight: bold;
   text-decoration: none;
 }
-.footer_info .footer_info-contact a:active, .footer_info .footer_info-contact a:hover, .footer_info .footer_info-contact a:focus {
+.footer_info .footer_info-phone a:active, .footer_info .footer_info-phone a:hover, .footer_info .footer_info-phone a:focus,
+.footer_info .footer_info-email a:active,
+.footer_info .footer_info-email a:hover,
+.footer_info .footer_info-email a:focus {
   color: #BB743A;
 }
 .footer_info .footer_info-social {
-  align-self: flex-end;
+  align-items: center;
+  display: flex;
+  margin-left: 2rem;
+}
+.footer_info .footer_info-social a {
+  display: inline-block;
+  margin-left: 0.6rem;
 }
 
 .copyright {

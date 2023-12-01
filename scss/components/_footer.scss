@@ -86,15 +86,21 @@ footer {
     }
 
     .footer_info-details {
-        display: flex;
+        flex-direction: column;
+        font-weight: 600;
     }
 
     .footer_info-contact {
-        font-size: 14px;
-        flex: 0 0 320px;
-
+        align-items: center;
         color: $copper;
+        display: flex;
+        font-size: 14px;
+        margin-bottom: .6rem;
+    }
 
+    .footer_info-phone,
+    .footer_info-email {
+        color: $copper;
         a {
             border-bottom: solid 1px $copper;
             color: $black-raisin;
@@ -108,7 +114,14 @@ footer {
     }
 
     .footer_info-social {
-        align-self: flex-end;
+        align-items: center;
+        display: flex;
+        margin-left: 2rem;
+
+        a {
+            display: inline-block;
+            margin-left: .6rem;
+        }
     }
 }
 
