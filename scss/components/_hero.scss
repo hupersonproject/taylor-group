@@ -41,13 +41,17 @@
     }
 
     @include breakpoint('large') {
+        flex: 0 0 500px;
+    }
+
+    @include breakpoint('xlarge') {
         flex: 0 0 540px;
     }
 
     h1 {
         max-width: 23rem;
         @include breakpoint('tiny') {
-            max-width: 31rem;
+            max-width: 32rem;
         }
         
     }
@@ -120,6 +124,6 @@
     min-width: 200px;
     width: 100%;
     @include breakpoint('vtiny') {
-        min-width: 290px;
+        min-width: 330px;
     }
 }

@@ -301,6 +301,11 @@ header.wrapper {
 }
 @media (min-width: 1200px) {
   .hero_content {
+    flex: 0 0 500px;
+  }
+}
+@media (min-width: 1300px) {
+  .hero_content {
     flex: 0 0 540px;
   }
 }
@@ -309,7 +314,7 @@ header.wrapper {
 }
 @media (min-width: 600px) {
   .hero_content h1 {
-    max-width: 31rem;
+    max-width: 32rem;
   }
 }
 .hero_content p {
@@ -381,7 +386,7 @@ header.wrapper {
 }
 @media (min-width: 380px) {
   .collage-3 {
-    min-width: 290px;
+    min-width: 330px;
   }
 }
 
