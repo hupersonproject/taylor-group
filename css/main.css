@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .button_link {
   background: white;
-  border: solid 1px #BB743A;
+  border: solid 2px #BB743A;
   color: #231F20;
   font-family: Montserrat;
   font-size: 12px;
@@ -123,7 +123,7 @@ p {
   color: #231F20;
   font-family: "DMsans";
   font-weight: 300;
-  line-height: 1.8;
+  line-height: 1.6;
 }
 
 body {
@@ -183,12 +183,11 @@ header.wrapper {
 
 .logo-ttg {
   margin-right: 2rem;
-  max-width: 31%;
+  max-width: 170px;
 }
 @media (min-width: 600px) {
   .logo-ttg {
     margin-right: 4rem;
-    max-width: 100%;
   }
 }
 
