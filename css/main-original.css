@@ -148,12 +148,6 @@ body {
   padding-right: 35px;
   position: relative;
 }
-@media (min-width: 600px) {
-  .wrapper {
-    padding-left: 75px;
-    padding-right: 75px;
-  }
-}
 @media (min-width: 920px) {
   .wrapper {
     padding-left: 70px;
@@ -270,6 +264,8 @@ header.wrapper {
 }
 @media (min-width: 600px) {
   .hero_wrapper {
+    padding-left: 75px;
+    padding-right: 75px;
     max-width: 540px;
   }
 }
@@ -391,109 +387,6 @@ header.wrapper {
   .collage-3 {
     min-width: 330px;
   }
-}
-
-.workshops-wrapper {
-  margin: 7rem 0;
-}
-.workshops-wrapper .workshops {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-@media (min-width: 700px) {
-  .workshops-wrapper .workshops {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-}
-@media (min-width: 1080px) {
-  .workshops-wrapper .workshops {
-    flex-wrap: nowrap;
-  }
-}
-.workshops-wrapper .workshop {
-  flex: 0 0 auto;
-}
-@media (min-width: 700px) {
-  .workshops-wrapper .workshop {
-    flex: 0 1 calc(50% - 1rem);
-  }
-}
-@media (min-width: 1080px) {
-  .workshops-wrapper .workshop {
-    flex: 0 1 calc(50% - 0.75rem);
-  }
-}
-.workshops-wrapper .workshop:active .title, .workshops-wrapper .workshop:hover .title, .workshops-wrapper .workshop:focus .title {
-  color: #BB743A;
-}
-.workshops-wrapper h2 {
-  color: #000;
-  font-family: Montserrat;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 130%;
-  letter-spacing: 2.8px;
-  text-align: center;
-  text-transform: uppercase;
-}
-.workshops-wrapper .fig {
-  display: flex;
-  position: relative;
-}
-.workshops-wrapper .fig img {
-  width: 100%;
-}
-.workshops-wrapper .fig .flag {
-  background: #809EA4;
-  bottom: 0;
-  color: #FFF;
-  font-family: "DMsans";
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 700;
-  left: 0;
-  letter-spacing: 1.5px;
-  line-height: 120%;
-  padding: 8px 11px;
-  position: absolute;
-  text-transform: uppercase;
-}
-.workshops-wrapper .fig .flag.copper {
-  background: #BB743A;
-}
-.workshops-wrapper .workshop_details {
-  color: #000;
-  font-family: Montserrat;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 130%; /* 19.5px */
-  padding: 2rem 0 1.5rem;
-}
-.workshops-wrapper .workshop_details span {
-  display: block;
-}
-.workshops-wrapper .workshop_details .title {
-  display: inline-block;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1.4;
-  margin-bottom: 0.6rem;
-}
-.workshops-wrapper p {
-  font-family: "DMsans";
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%; /* 22.5px */
-}
-
-.tg_logo_hidden {
-  opacity: 0;
-  pointer-events: none;
 }
 
 footer {

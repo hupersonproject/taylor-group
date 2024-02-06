@@ -24,6 +24,10 @@ body {
     padding-right: 35px;
     position: relative;
 
+    @include breakpoint('tiny') {
+        padding-left: 75px;
+        padding-right: 75px;
+    }
     @include breakpoint('header') {
         padding-left: 70px;
         padding-right: 70px;

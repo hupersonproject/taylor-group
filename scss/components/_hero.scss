@@ -8,8 +8,6 @@
     overflow: hidden;
 
     @include breakpoint('tiny') {
-        padding-left: 75px;
-        padding-right: 75px;
         max-width: 540px;
     }
 
