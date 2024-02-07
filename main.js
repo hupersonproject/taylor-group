@@ -16,3 +16,7 @@
         });
     };
 })();
+
+(function() {
+    const workshop_wrapper = document.getElementById("workshop_wrapper");
+})();

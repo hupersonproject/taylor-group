@@ -2,6 +2,10 @@
 .container {
     &.workshop {
 
+        .logo-ttg {
+            margin-right: 0;
+        }
+
         .tg_logo_hidden {
             display: none;
         }
@@ -49,8 +53,11 @@
         
         .hero_content {
             flex: 1 1;
+            padding-right: 0;
+            padding-bottom: 4rem;
             @include breakpoint('small') {
                 flex: 0 0 480px;
+                padding-right: 2rem;
             }
             @include breakpoint('header') {
                 flex: 0 0 480px;
@@ -63,15 +70,17 @@
                 flex: 0 0 520px;
             }
 
+            h1 {
+                max-width: 100%;
+            }
+
             p {
+                margin-left: 0;
                 max-width: none;
                 
+                &.workshop_details,
                 &.workshop_desc {
                     font-size: 20px;
-                }
-
-                &.workshop_details {
-                    font-size: 18px;
                 }
 
                 &.mini_header {
@@ -89,18 +98,15 @@
         }
 
         .hero_workshop_title {
-            border-left: solid 6px $warm-off-white;
             margin-bottom: 3rem;
-            margin-left: -75px;
-            padding-left: 70px;
-        
-            @include breakpoint('header') {
-                margin-left: -70px;
-                padding-left: 65px;
+            text-align: center;
+
+            @include breakpoint('small') {
+                text-align: left;
             }
-        
+
             h1 {
-                color: var($black-raisin, #231F20);
+                color: $black-raisin;
                 font-family: 'TheSeasons';
                 font-size: 64px;
                 font-style: normal;
@@ -119,41 +125,74 @@
                 text-transform: uppercase;
             }
         }
-        .collage-3 {
 
+        .small_images {
+            bottom: auto;
+            top: 4rem;
             @include breakpoint('small') {
-                min-width: 400px;
+                top: 17.45rem;
+            }
+
+
+            @include breakpoint('large') {
+                bottom: 11rem;
+                top: auto;
             }
         }
-        
-        .collage-stripe {
-            background: $copper;
-            bottom: 10rem;
-            height: 5px;
-            margin-right: -75px;
-            position: absolute;
-            width: 300px;
-        
-            @include breakpoint('header') {
-                margin-right: -70px;
+        .collage-3 {
+            @include breakpoint('small') {
+                min-width: 520px;
             }
-        
         }
+
         
     }
 }
 
+
+.workshop_wrapper {
+    position: relative;
+}
+.hero_title_stripe {
+    height: 200px;
+    width: 5px;
+    background: $warm-off-white;
+    position: absolute;
+    left: 0;
+    top: 12.75rem;
+}
+        
+.collage-stripe {
+    background: $copper;
+    bottom: 34rem;
+    display: none;
+    height: 5px;
+    right: 0;
+    position: absolute;
+    width: 300px;
+
+    @include breakpoint('header') {
+        display: block;
+    }
+
+
+}
 .workshop_callout {
     color: $black-raisin;
     font-family: 'TheSeasons';
-    font-size: 40px;
+    font-size: 34px;
     font-style: normal;
     font-weight: 700;
     line-height: 130%;
-    text-align: center;
-    margin: 0 auto 4rem;
+    margin: 4rem auto 4rem;
     max-width: 920px;
     width: calc(100% - 150px);
+
+    @include breakpoint('header') {
+        font-size: 40px;
+        text-align: center;
+        margin: 2rem auto 6rem;
+    }
 
     span {
         color: $copper;
@@ -173,6 +212,7 @@
         font-weight: 600;
         line-height: 22px; /* 157.143% */
         letter-spacing: 1.4px;
+        margin-bottom: 0;
         text-transform: uppercase;
     }
 }
@@ -184,6 +224,14 @@
         flex: 0 0 66%;
     }
 
+    a {
+        border-bottom: 1px solid $copper;
+        color: $black;
+
+        @include hocus {
+            border-bottom: none;
+        }
+    }
     p {
         font-size: 20px;
     }
@@ -378,7 +426,7 @@
         color: $black-raisin;
         display: block;
         font-family: Montserrat;
-        font-size: 17px;
+        font-size: 15px;
         font-style: normal;
         font-weight: 700;
         line-height: 130%; /* 22.1px */
@@ -386,6 +434,9 @@
         padding: .2rem 3rem .7rem 0;
         text-transform: uppercase;
         width: 100%;
+        @include breakpoint('small') {
+            font-size: 17px;
+        }
     }
 
     .faq_info {
@@ -402,6 +453,7 @@
         max-height: 0;
         opacity: 0;
         overflow: hidden;
+
 
         &.panel-open {
             max-height: 20rem;
@@ -455,13 +507,13 @@
         }
     }
 
-    .cta_info {
-    }
+
 
     .cta_buttons {
         display: flex;
         gap: 1rem;
         flex-wrap: wrap;
+        justify-content: center;
 
         @include breakpoint('header') {
             flex-wrap: nowrap;
