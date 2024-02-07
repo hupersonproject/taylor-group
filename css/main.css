@@ -491,9 +491,452 @@ header.wrapper {
   line-height: 150%; /* 22.5px */
 }
 
-.tg_logo_hidden {
+.container.workshop .tg_logo_hidden {
+  display: none;
+}
+.container.workshop .register_cta {
+  box-sizing: border-box;
+  color: #000;
+  font-family: "Montserrat";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 1.2px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px #DDE2E5;
+  padding-left: 1rem;
+  width: 100%;
+}
+@media (min-width: 920px) {
+  .container.workshop .register_cta {
+    border-bottom: 0;
+    display: inline;
+    padding-left: 0;
+    padding-top: 40px;
+    width: auto;
+  }
+}
+.container.workshop .register_cta a {
+  background: #BB743A;
+  color: #fff;
+  display: inline-flex;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 175%;
+  letter-spacing: 2.4px;
+  margin-left: 1.5rem;
+  padding: 16px 25px 17px 26px;
+  text-transform: uppercase;
+}
+.container.workshop .hero_content {
+  flex: 1 1;
+}
+@media (min-width: 840px) {
+  .container.workshop .hero_content {
+    flex: 0 0 480px;
+  }
+}
+@media (min-width: 920px) {
+  .container.workshop .hero_content {
+    flex: 0 0 480px;
+  }
+}
+@media (min-width: 1200px) {
+  .container.workshop .hero_content {
+    flex: 0 0 520px;
+  }
+}
+@media (min-width: 1300px) {
+  .container.workshop .hero_content {
+    flex: 0 0 520px;
+  }
+}
+.container.workshop .hero_content p {
+  max-width: none;
+}
+.container.workshop .hero_content p.workshop_desc {
+  font-size: 20px;
+}
+.container.workshop .hero_content p.workshop_details {
+  font-size: 18px;
+}
+.container.workshop .hero_content p.mini_header {
+  color: #231F20;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 1.5px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+.container.workshop .hero_workshop_title {
+  border-left: solid 6px #E0D7D0;
+  margin-bottom: 3rem;
+  margin-left: -75px;
+  padding-left: 70px;
+}
+@media (min-width: 920px) {
+  .container.workshop .hero_workshop_title {
+    margin-left: -70px;
+    padding-left: 65px;
+  }
+}
+.container.workshop .hero_workshop_title h1 {
+  color: var(#231F20, #231F20);
+  font-family: "TheSeasons";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 109%;
+}
+.container.workshop .hero_workshop_title .workshop_sub {
+  color: #BB743A;
+  font-family: "DMSans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 111%;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+@media (min-width: 840px) {
+  .container.workshop .collage-3 {
+    min-width: 400px;
+  }
+}
+.container.workshop .collage-stripe {
+  background: #BB743A;
+  bottom: 10rem;
+  height: 5px;
+  margin-right: -75px;
+  position: absolute;
+  width: 300px;
+}
+@media (min-width: 920px) {
+  .container.workshop .collage-stripe {
+    margin-right: -70px;
+  }
+}
+
+.workshop_callout {
+  color: #231F20;
+  font-family: "TheSeasons";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  text-align: center;
+  margin: 0 auto 4rem;
+  max-width: 920px;
+  width: calc(100% - 150px);
+}
+.workshop_callout span {
+  color: #BB743A;
+}
+
+@media (min-width: 920px) {
+  .workshop_info {
+    display: flex;
+  }
+}
+.workshop_info h2 {
+  color: #BB743A;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px; /* 157.143% */
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+.workshop_info-details {
+  display: flex;
+  justify-content: flex-end;
+}
+@media (min-width: 920px) {
+  .workshop_info-details {
+    flex: 0 0 66%;
+  }
+}
+.workshop_info-details p {
+  font-size: 20px;
+}
+
+@media (min-width: 920px) {
+  .workshop_info-details_inner {
+    max-width: 680px;
+    padding-right: 5rem;
+  }
+}
+
+@media (min-width: 920px) {
+  .workshop_info-course_progress {
+    flex: 0 0 34%;
+  }
+}
+
+.workshop_info-course_progress_inner {
+  background-color: #DDE2E5;
+  color: #000;
+  font-family: "DMSans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 27.2px */
+  padding: 3rem;
+}
+@media (min-width: 920px) {
+  .workshop_info-course_progress_inner {
+    margin-right: -67px;
+  }
+}
+.workshop_info-course_progress_inner li {
+  margin-bottom: 1rem;
+}
+
+.info_register_button {
+  margin: 4rem 0 6rem;
+  text-align: center;
+}
+
+.workshop_quote {
+  background-color: #E0D7D0;
+  margin-bottom: 4rem;
+  padding: 5rem 0;
+  text-align: center;
+}
+.workshop_quote h2 {
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 18.2px */
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+}
+.workshop_quote blockquote {
+  color: #202A47;
+  text-align: center;
+  font-family: "Theseasons";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 46.8px */
+  margin: 0 auto 2rem;
+  max-width: 900px;
+}
+
+.play_button {
+  align-items: center;
+  color: #000;
+  background: rgba(85, 110, 124, 0.2);
+  border-radius: 1.2rem;
+  display: inline-flex;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  gap: 0.5rem;
+  letter-spacing: 2.8px;
+  line-height: 130%;
+  margin-bottom: 2rem;
+  padding: 0.6rem 0.9rem 0.6rem 0.7rem;
+  text-transform: uppercase;
+}
+.play_button:active, .play_button:hover, .play_button:focus {
+  background: #fff;
+}
+
+.quote_attr {
+  align-items: center;
+  display: inline-flex;
+  gap: 1rem;
+  margin: 0 auto;
+}
+.quote_attr img {
+  border-radius: 50%;
+}
+
+.attr_info {
+  color: #202A47;
+  font-family: "DMSans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 20.8px */
+  text-align: left;
+}
+.attr_info span {
+  display: block;
+  font-weight: 600;
+  font-family: Montserrat;
+  letter-spacing: 1.6px;
+}
+
+.lightbox {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  overflow: scroll;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
   opacity: 0;
   pointer-events: none;
+}
+.lightbox.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.lightbox .lightbox-container {
+  position: relative;
+  max-width: 960px;
+  z-index: 10;
+}
+
+.video-container {
+  padding-bottom: 56.25%;
+  position: relative;
+  padding-top: 30px;
+  overflow: hidden;
+  height: 0;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.workshop_faqs {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+}
+.workshop_faqs h2 {
+  color: #BB743A;
+  font-family: "Montserrat";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22.5px; /* 150% */
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.workshop_faqs .faq_button {
+  background-image: url(/img/plus_open.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  border-bottom: solid 4px #E0D7D0;
+  box-sizing: border-box;
+  color: #231F20;
+  display: block;
+  font-family: Montserrat;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 22.1px */
+  letter-spacing: 1.7px;
+  padding: 0.2rem 3rem 0.7rem 0;
+  text-transform: uppercase;
+  width: 100%;
+}
+.workshop_faqs .faq_info {
+  color: #000;
+  font-family: "DMSans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 27.2px */
+  padding: 1rem 0;
+  transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+.workshop_faqs .faq_info.panel-open {
+  max-height: 20rem;
+  opacity: 1;
+}
+
+.talk_to_coach {
+  background: #202A47;
+}
+.talk_to_coach .wrapper {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+@media (min-width: 920px) {
+  .talk_to_coach .wrapper {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+.talk_to_coach h2 {
+  margin-bottom: 1rem;
+}
+.talk_to_coach p {
+  color: #BB743A;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22.5px; /* 150% */
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+@media (min-width: 920px) {
+  .talk_to_coach p {
+    margin-bottom: 0;
+  }
+}
+.talk_to_coach .cta_buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+@media (min-width: 920px) {
+  .talk_to_coach .cta_buttons {
+    flex-wrap: nowrap;
+  }
+}
+.talk_to_coach .cta_buttons a {
+  border: solid 1px #BB743A;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22.5px; /* 150% */
+  letter-spacing: 3px;
+  min-width: 180px;
+  padding: 1rem;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 footer {
