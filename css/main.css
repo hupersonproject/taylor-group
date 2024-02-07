@@ -126,6 +126,20 @@ p {
   line-height: 1.6;
 }
 
+.copper_button {
+  background: #BB743A;
+  color: #fff;
+  display: inline-flex;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 175%;
+  letter-spacing: 2.4px;
+  padding: 16px 25px 17px 26px;
+  text-transform: uppercase;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -397,9 +411,10 @@ header.wrapper {
   margin: 7rem 0;
 }
 .workshops-wrapper .workshops {
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  justify-content: space-between;
 }
 @media (min-width: 700px) {
   .workshops-wrapper .workshops {
@@ -414,15 +429,13 @@ header.wrapper {
 }
 .workshops-wrapper .workshop {
   flex: 0 0 auto;
+  max-width: 510px;
+  margin: 0 auto;
 }
-@media (min-width: 700px) {
+@media (min-width: 840px) {
   .workshops-wrapper .workshop {
-    flex: 0 1 calc(50% - 1rem);
-  }
-}
-@media (min-width: 1080px) {
-  .workshops-wrapper .workshop {
-    flex: 0 1 calc(50% - 0.75rem);
+    flex: 0 1 calc(33% - 1rem);
+    margin: 0;
   }
 }
 .workshops-wrapper a.workshop:active .title, .workshops-wrapper a.workshop:hover .title, .workshops-wrapper a.workshop:focus .title {
@@ -523,17 +536,7 @@ header.wrapper {
   }
 }
 .container.workshop .register_cta a {
-  background: #BB743A;
-  color: #fff;
-  display: inline-flex;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 175%;
-  letter-spacing: 2.4px;
   margin-left: 1.5rem;
-  padding: 16px 25px 17px 26px;
-  text-transform: uppercase;
 }
 .container.workshop .hero_content {
   flex: 1 1;

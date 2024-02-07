@@ -3,9 +3,10 @@
     margin: 7rem 0;
 
     .workshops {
+        align-items: flex-start;
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        justify-content: space-between;
 
         @include breakpoint('smallish') {
             flex-direction: row;
@@ -18,12 +19,15 @@
 
     .workshop {
         flex: 0 0 auto;
+        max-width: 510px;
+        margin: 0 auto;
 
-        @include breakpoint('smallish') {
-            flex: 0 1 calc(50% - 1rem);
-        }
-        @include breakpoint('mediumplus') {
-            flex: 0 1 calc(50% - .75rem);
+        // @include breakpoint('smallish') {
+        //     flex: 0 1 calc(50% - 1rem);
+        // }
+        @include breakpoint('small') {
+            flex: 0 1 calc(33% - 1rem);
+            margin: 0;
         }
     }
 
