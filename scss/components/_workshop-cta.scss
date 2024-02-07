@@ -25,7 +25,9 @@
         @include breakpoint('mediumplus') {
             flex: 0 1 calc(50% - .75rem);
         }
+    }
 
+    a.workshop {
         @include hocus {
             .title {
                 color: $copper;

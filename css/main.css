@@ -425,7 +425,7 @@ header.wrapper {
     flex: 0 1 calc(50% - 0.75rem);
   }
 }
-.workshops-wrapper .workshop:active .title, .workshops-wrapper .workshop:hover .title, .workshops-wrapper .workshop:focus .title {
+.workshops-wrapper a.workshop:active .title, .workshops-wrapper a.workshop:hover .title, .workshops-wrapper a.workshop:focus .title {
   color: #BB743A;
 }
 .workshops-wrapper h2 {
