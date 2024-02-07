@@ -4,6 +4,9 @@
 
         .logo-ttg {
             margin-right: 0;
+            @include breakpoint('tiny') {
+                margin-right: 0;
+            }
         }
 
         .tg_logo_hidden {
