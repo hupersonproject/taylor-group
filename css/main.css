@@ -594,10 +594,25 @@ header.wrapper {
 .container.workshop .hero_workshop_title h1 {
   color: #231F20;
   font-family: "TheSeasons";
-  font-size: 64px;
+  font-size: 42px;
   font-style: normal;
   font-weight: 700;
   line-height: 109%;
+}
+@media (min-width: 290px) {
+  .container.workshop .hero_workshop_title h1 {
+    font-size: 50px;
+  }
+}
+@media (min-width: 380px) {
+  .container.workshop .hero_workshop_title h1 {
+    font-size: 58px;
+  }
+}
+@media (min-width: 600px) {
+  .container.workshop .hero_workshop_title h1 {
+    font-size: 64px;
+  }
 }
 .container.workshop .hero_workshop_title .workshop_sub {
   color: #BB743A;
