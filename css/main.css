@@ -668,11 +668,11 @@ header.wrapper {
 
 .collage-stripe {
   background: #BB743A;
-  bottom: 34rem;
   display: none;
   height: 5px;
   right: 0;
   position: absolute;
+  top: 734px;
   width: 300px;
 }
 @media (min-width: 920px) {

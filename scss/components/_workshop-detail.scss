@@ -166,11 +166,11 @@
         
 .collage-stripe {
     background: $copper;
-    bottom: 34rem;
     display: none;
     height: 5px;
     right: 0;
     position: absolute;
+    top: 734px;
     width: 300px;
 
     @include breakpoint('header') {
