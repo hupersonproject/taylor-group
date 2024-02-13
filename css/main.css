@@ -835,6 +835,7 @@ header.wrapper {
 }
 .quote_attr img {
   border-radius: 50%;
+  width: 70px;
 }
 
 .attr_info {
