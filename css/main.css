@@ -738,6 +738,10 @@ header.wrapper {
 }
 .workshop_info-details p {
   font-size: 20px;
+  margin-bottom: 0;
+}
+.workshop_info-details p + h2 {
+  margin-top: 2rem;
 }
 
 @media (min-width: 920px) {
@@ -1033,6 +1037,12 @@ header.wrapper {
   padding: 1rem;
   text-align: center;
   text-transform: uppercase;
+}
+
+.coming_soon_button {
+  background: #fff;
+  color: #000;
+  border: solid 1px #000 !important;
 }
 
 footer {

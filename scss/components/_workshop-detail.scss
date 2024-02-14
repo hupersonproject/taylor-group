@@ -236,6 +236,10 @@
     }
     p {
         font-size: 20px;
+        margin-bottom: 0;
+    }
+    p + h2 {
+        margin-top: 2rem;
     }
 }
 
@@ -245,6 +249,7 @@
     
         padding-right: 5rem;
     }
+
 }
 
 .workshop_info-course_progress {
@@ -560,3 +565,11 @@
     }
 
 }
+
+
+.coming_soon_button {
+    background: $white;
+    color: $black;
+    border: solid 1px $black!important;
+}
+
