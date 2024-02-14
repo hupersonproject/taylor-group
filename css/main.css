@@ -738,7 +738,7 @@ header.wrapper {
 }
 .workshop_info-details p {
   font-size: 20px;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 .workshop_info-details p + h2 {
   margin-top: 2rem;
@@ -1043,6 +1043,7 @@ header.wrapper {
   background: #fff;
   color: #000;
   border: solid 1px #000 !important;
+  pointer-events: none;
 }
 
 footer {
