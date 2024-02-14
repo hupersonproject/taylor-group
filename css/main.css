@@ -711,7 +711,7 @@ header.wrapper {
 .workshop_info h2 {
   color: #BB743A;
   font-family: Montserrat;
-  font-size: 14px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 600;
   line-height: 22px; /* 157.143% */
@@ -734,7 +734,7 @@ header.wrapper {
   color: #000;
 }
 .workshop_info-details a:active, .workshop_info-details a:hover, .workshop_info-details a:focus {
-  border-bottom: none;
+  color: #BB743A;
 }
 .workshop_info-details p {
   font-size: 20px;
@@ -879,6 +879,18 @@ header.wrapper {
   z-index: 10;
 }
 
+.lightbox-content {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+.lightbox-content iframe {
+  width: 90vw;
+  height: 50.58vw;
+}
+
 .video-container {
   padding-bottom: 56.25%;
   position: relative;
@@ -900,6 +912,12 @@ header.wrapper {
 .workshop_faqs {
   max-width: 1200px;
   margin: 0 auto 3rem;
+}
+.workshop_faqs p {
+  margin-bottom: 1rem;
+}
+.workshop_faqs p:last-of-type {
+  margin-bottom: 2rem;
 }
 .workshop_faqs h2 {
   color: #BB743A;
