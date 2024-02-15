@@ -21,6 +21,7 @@
         flex: 0 0 auto;
         max-width: 510px;
         margin: 0 auto;
+        width: 100%;
 
         // @include breakpoint('smallish') {
         //     flex: 0 1 calc(50% - 1rem);
@@ -28,6 +29,13 @@
         @include breakpoint('small') {
             flex: 0 1 calc(33% - 1rem);
             margin: 0;
+        }
+
+        & + .workshop {
+            margin-top: 2rem;
+            @include breakpoint('small') {
+                margin-top: 0;
+            }
         }
     }
 
@@ -53,10 +61,12 @@
 
 
     .fig {
+        aspect-ratio: 3/2;
         display: flex;
         position: relative;
 
         img {
+            // aspect-ratio: 2/1;
             width: 100%;
         }
 
@@ -88,7 +98,10 @@
         font-style: normal;
         font-weight: 300;
         line-height: 130%; /* 19.5px */
-        padding: 2rem 0 1.5rem;
+        padding: 1.5rem 0 1rem;
+        @include breakpoint('small') {
+            padding: 2rem 0 1.5rem;
+        }
 
         span {
             display: block;

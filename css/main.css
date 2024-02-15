@@ -431,11 +431,20 @@ header.wrapper {
   flex: 0 0 auto;
   max-width: 510px;
   margin: 0 auto;
+  width: 100%;
 }
 @media (min-width: 840px) {
   .workshops-wrapper .workshop {
     flex: 0 1 calc(33% - 1rem);
     margin: 0;
+  }
+}
+.workshops-wrapper .workshop + .workshop {
+  margin-top: 2rem;
+}
+@media (min-width: 840px) {
+  .workshops-wrapper .workshop + .workshop {
+    margin-top: 0;
   }
 }
 .workshops-wrapper a.workshop:active .title, .workshops-wrapper a.workshop:hover .title, .workshops-wrapper a.workshop:focus .title {
@@ -453,6 +462,7 @@ header.wrapper {
   text-transform: uppercase;
 }
 .workshops-wrapper .fig {
+  aspect-ratio: 3/2;
   display: flex;
   position: relative;
 }
@@ -484,7 +494,12 @@ header.wrapper {
   font-style: normal;
   font-weight: 300;
   line-height: 130%; /* 19.5px */
-  padding: 2rem 0 1.5rem;
+  padding: 1.5rem 0 1rem;
+}
+@media (min-width: 840px) {
+  .workshops-wrapper .workshop_details {
+    padding: 2rem 0 1.5rem;
+  }
 }
 .workshops-wrapper .workshop_details span {
   display: block;
