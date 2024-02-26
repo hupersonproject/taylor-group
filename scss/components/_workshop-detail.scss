@@ -2,6 +2,15 @@
 .container {
     &.workshop {
 
+
+        .hero_wrapper {
+       
+            @include breakpoint('small') {
+                // align-items: flex-start;
+            }
+        
+        }
+
         .logo-ttg {
             margin-right: 0;
             @include breakpoint('tiny') {
@@ -45,6 +54,7 @@
         }
         
         .hero_content {
+            align-self: flex-start;
             flex: 1 1;
             padding-right: 0;
             padding-bottom: 4rem;
@@ -125,6 +135,18 @@
                 line-height: 111%;
                 letter-spacing: 1.8px;
                 text-transform: uppercase;
+
+                &.alt {
+                    text-transform: none;
+                }
+            }
+        }
+
+        .hero_images {
+            @include breakpoint('small') {
+                align-items: center;
+                height: 600px;
+                padding-top: 100px;
             }
         }
 
@@ -132,14 +154,9 @@
             bottom: auto;
             top: 4rem;
             @include breakpoint('small') {
-                top: 17.45rem;
-            }
-
-
-            @include breakpoint('large') {
-                bottom: 11rem;
                 top: auto;
             }
+
         }
         .collage-3 {
             @include breakpoint('small') {
@@ -170,7 +187,7 @@
     height: 5px;
     right: 0;
     position: absolute;
-    top: 734px;
+    top: 710px;
     width: 300px;
 
     @include breakpoint('header') {
@@ -221,9 +238,10 @@
 
 .workshop_info-details {
     display: flex;
+    font-family: Montserrat;
     justify-content: flex-end;
     @include breakpoint('header') {
-        flex: 0 0 66%;
+        flex: 0 0 62%;
     }
 
     a {
@@ -234,7 +252,16 @@
             color: $copper;
         }
     }
+
+    ul {
+        margin: 1rem 0;
+    }
+    li,
     p {
+        color: #231F20;
+        font-family: "DMsans";
+        font-weight: 300;
+        line-height: 1.6;
         font-size: 20px;
         margin-bottom: 10px;
     }
@@ -245,16 +272,17 @@
 
 .workshop_info-details_inner {
     @include breakpoint('header') {
-        max-width: 680px;
+        box-sizing: border-box;
+        max-width: 750px;
     
-        padding-right: 5rem;
+        padding-right: 6rem;
     }
 
 }
 
 .workshop_info-course_progress {
     @include breakpoint('header') {
-        flex: 0 0 34%;
+        flex: 0 0 38%;
     }
 }
 
@@ -548,20 +576,6 @@
             flex-wrap: nowrap;
         }
 
-        a {
-            border: solid 1px $copper;
-            color: $white;
-            font-family: Montserrat;
-            font-size: 15px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 22.5px; /* 150% */
-            letter-spacing: 3px;
-            min-width: 180px;
-            padding: 1rem;
-            text-align: center;
-            text-transform: uppercase;
-        }
     }
 
 }
@@ -574,3 +588,38 @@
     pointer-events: none;
 }
 
+.course_leaders_container {
+    background: $light-off-white;
+    margin: -4rem 0 4rem;
+    padding: 4rem 0 3rem;
+}
+
+.course_leaders {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    @include breakpoint('medium') {
+        flex-direction: row;
+    }
+
+    h3 {
+        color: $copper;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 170%; /* 34px */
+        margin: 1rem 0 .25rem;
+        text-transform: none;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .leader {
+        flex: 0 0 50%;
+    }
+
+}

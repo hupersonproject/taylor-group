@@ -37,25 +37,6 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0 0 36px;
 }
 
-.button_link {
-  background: white;
-  border: solid 2px #BB743A;
-  color: #231F20;
-  font-family: Montserrat;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 21px; /* 175% */
-  letter-spacing: 2.4px;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: background-color 0.5s ease-in-out;
-  padding: 16px 25px 17px;
-}
-.button_link:active, .button_link:hover, .button_link:focus {
-  background: #BB743A;
-}
-
 a,
 .copper_text {
   color: #BB743A;
@@ -107,6 +88,16 @@ h2 {
   font-weight: 700;
   line-height: 27px;
 }
+h2.small_uppercase {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22.5px; /* 150% */
+  letter-spacing: 2.8px;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 h3 {
   color: #231F20;
@@ -128,6 +119,7 @@ p {
 
 .copper_button {
   background: #BB743A;
+  border: solid 2px #BB743A;
   color: #fff;
   display: inline-flex;
   font-family: "Montserrat";
@@ -138,6 +130,53 @@ p {
   letter-spacing: 2.4px;
   padding: 16px 25px 17px 26px;
   text-transform: uppercase;
+  transition: background-color 0.3s ease-out, color 0.3s ease-out;
+}
+.copper_button:active, .copper_button:hover, .copper_button:focus {
+  background: transparent;
+  color: #000;
+}
+
+.button_link,
+.clear_button {
+  border: solid 2px #BB743A;
+  color: #000;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 175%;
+  letter-spacing: 2.4px;
+  padding: 16px 25px 17px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease-out, color 0.3s ease-out;
+}
+.button_link:active, .button_link:hover, .button_link:focus,
+.clear_button:active,
+.clear_button:hover,
+.clear_button:focus {
+  background: #BB743A;
+  color: #fff;
+}
+
+.cta_button {
+  border: solid 1px #BB743A;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22.5px; /* 150% */
+  letter-spacing: 3px;
+  min-width: 180px;
+  padding: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease-out;
+}
+.cta_button:active, .cta_button:hover, .cta_button:focus {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
 }
 
 body {
@@ -333,6 +372,9 @@ header.wrapper {
   .hero_content h1 {
     max-width: 32rem;
   }
+}
+.hero_content .button_link {
+  line-height: 21px;
 }
 .hero_content p {
   max-width: 300px;
@@ -559,6 +601,7 @@ header.wrapper {
   margin-left: 1.5rem;
 }
 .container.workshop .hero_content {
+  align-self: flex-start;
   flex: 1 1;
   padding-right: 0;
   padding-bottom: 4rem;
@@ -647,18 +690,22 @@ header.wrapper {
   letter-spacing: 1.8px;
   text-transform: uppercase;
 }
+.container.workshop .hero_workshop_title .workshop_sub.alt {
+  text-transform: none;
+}
+@media (min-width: 840px) {
+  .container.workshop .hero_images {
+    align-items: center;
+    height: 600px;
+    padding-top: 100px;
+  }
+}
 .container.workshop .small_images {
   bottom: auto;
   top: 4rem;
 }
 @media (min-width: 840px) {
   .container.workshop .small_images {
-    top: 17.45rem;
-  }
-}
-@media (min-width: 1200px) {
-  .container.workshop .small_images {
-    bottom: 11rem;
     top: auto;
   }
 }
@@ -687,7 +734,7 @@ header.wrapper {
   height: 5px;
   right: 0;
   position: absolute;
-  top: 734px;
+  top: 710px;
   width: 300px;
 }
 @media (min-width: 920px) {
@@ -737,11 +784,12 @@ header.wrapper {
 
 .workshop_info-details {
   display: flex;
+  font-family: Montserrat;
   justify-content: flex-end;
 }
 @media (min-width: 920px) {
   .workshop_info-details {
-    flex: 0 0 66%;
+    flex: 0 0 62%;
   }
 }
 .workshop_info-details a {
@@ -751,7 +799,15 @@ header.wrapper {
 .workshop_info-details a:active, .workshop_info-details a:hover, .workshop_info-details a:focus {
   color: #BB743A;
 }
+.workshop_info-details ul {
+  margin: 1rem 0;
+}
+.workshop_info-details li,
 .workshop_info-details p {
+  color: #231F20;
+  font-family: "DMsans";
+  font-weight: 300;
+  line-height: 1.6;
   font-size: 20px;
   margin-bottom: 10px;
 }
@@ -761,14 +817,15 @@ header.wrapper {
 
 @media (min-width: 920px) {
   .workshop_info-details_inner {
-    max-width: 680px;
-    padding-right: 5rem;
+    box-sizing: border-box;
+    max-width: 750px;
+    padding-right: 6rem;
   }
 }
 
 @media (min-width: 920px) {
   .workshop_info-course_progress {
-    flex: 0 0 34%;
+    flex: 0 0 38%;
   }
 }
 
@@ -1039,26 +1096,45 @@ header.wrapper {
     flex-wrap: nowrap;
   }
 }
-.talk_to_coach .cta_buttons a {
-  border: solid 1px #BB743A;
-  color: #fff;
-  font-family: Montserrat;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 22.5px; /* 150% */
-  letter-spacing: 3px;
-  min-width: 180px;
-  padding: 1rem;
-  text-align: center;
-  text-transform: uppercase;
-}
 
 .coming_soon_button {
   background: #fff;
   color: #000;
   border: solid 1px #000 !important;
   pointer-events: none;
+}
+
+.course_leaders_container {
+  background: #f9f7f6;
+  margin: -4rem 0 4rem;
+  padding: 4rem 0 3rem;
+}
+
+.course_leaders {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+@media (min-width: 1024px) {
+  .course_leaders {
+    flex-direction: row;
+  }
+}
+.course_leaders h3 {
+  color: #BB743A;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 170%; /* 34px */
+  margin: 1rem 0 0.25rem;
+  text-transform: none;
+}
+.course_leaders p {
+  font-size: 18px;
+}
+.course_leaders .leader {
+  flex: 0 0 50%;
 }
 
 footer {

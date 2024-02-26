@@ -1,5 +1,9 @@
+
+
+
 .copper_button {
     background: $copper;
+    border: solid 2px $copper;
     color: $white;
     display: inline-flex;
     font-family: 'Montserrat';
@@ -10,4 +14,54 @@
     letter-spacing: 2.4px;
     padding: 16px 25px 17px 26px;
     text-transform: uppercase;
+    transition: background-color .3s ease-out, color .3s ease-out;
+
+    @include hocus {
+        background: transparent;
+        color: $black;
+    }
+}
+
+
+.button_link,
+.clear_button {
+    border: solid 2px $copper;
+    color: $black;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 175% ;
+    letter-spacing: 2.4px;
+    padding: 16px 25px 17px;
+    text-transform: uppercase;
+    transition: background-color .3s ease-out, color .3s ease-out;
+
+    @include hocus {
+        background: $copper;
+        color: $white;
+    }
+}
+
+.cta_button {
+    border: solid 1px $copper;
+    color: $white;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22.5px; /* 150% */
+    letter-spacing: 3px;
+    min-width: 180px;
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+
+    transition: background-color .3s ease-out;
+
+
+    @include hocus {
+        background: rgba(255,255,255,.1);
+        color: $white;
+    }
 }
