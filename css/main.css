@@ -929,6 +929,9 @@ header.wrapper {
   font-family: Montserrat;
   letter-spacing: 1.6px;
 }
+.attr_info.centered {
+  text-align: center;
+}
 
 .lightbox {
   align-items: center;
