@@ -1045,7 +1045,7 @@ header.wrapper {
   overflow: hidden;
 }
 .workshop_faqs .faq_info.panel-open {
-  max-height: 20rem;
+  max-height: 30rem;
   opacity: 1;
 }
 
