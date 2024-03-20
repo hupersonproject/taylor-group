@@ -752,7 +752,12 @@ header.wrapper {
   line-height: 130%;
   margin: 4rem auto 4rem;
   max-width: 920px;
-  width: calc(100% - 150px);
+  width: calc(100% - 75px);
+}
+@media (min-width: 600px) {
+  .workshop_callout {
+    width: calc(100% - 150px);
+  }
 }
 @media (min-width: 920px) {
   .workshop_callout {

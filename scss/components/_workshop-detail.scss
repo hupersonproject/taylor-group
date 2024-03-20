@@ -205,8 +205,10 @@
     line-height: 130%;
     margin: 4rem auto 4rem;
     max-width: 920px;
-    width: calc(100% - 150px);
-
+    width: calc(100% - 75px);
+    @include breakpoint('tiny') {
+        width: calc(100% - 150px);
+    }
     @include breakpoint('header') {
         font-size: 40px;
         text-align: center;
