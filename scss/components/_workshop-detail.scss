@@ -273,10 +273,11 @@
 }
 
 .workshop_info-details_inner {
+    padding-bottom: 2rem;
     @include breakpoint('header') {
         box-sizing: border-box;
         max-width: 750px;
-    
+        padding-bottom: 0;
         padding-right: 6rem;
     }
 

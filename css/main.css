@@ -820,10 +820,14 @@ header.wrapper {
   margin-top: 2rem;
 }
 
+.workshop_info-details_inner {
+  padding-bottom: 2rem;
+}
 @media (min-width: 920px) {
   .workshop_info-details_inner {
     box-sizing: border-box;
     max-width: 750px;
+    padding-bottom: 0;
     padding-right: 6rem;
   }
 }
